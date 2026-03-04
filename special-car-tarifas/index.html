@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarifas 2026 — Special Car</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <!-- Reemplaza con tu logo real: assets/logos/special-car.png -->
+        <img src="assets/logos/specialcar.png" alt="Special Car" class="logo-main" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <div class="logo-placeholder" style="display:none">
+          <span class="logo-text">SPECIAL<strong>CAR</strong></span>
+        </div>
+      </div>
+      <div class="header-title">
+        <h1>Tarifas Conductores <span>2026</span></h1>
+        <p>Tarifas vigentes para todos los convenios y clientes</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV TABS -->
+  <nav class="tab-nav" id="tabNav">
+    <div class="tab-nav-inner">
+      <button class="tab-btn active" data-target="win">WIN</button>
+      <button class="tab-btn" data-target="bluecare">BLUECARE</button>
+      <button class="tab-btn" data-target="adom">ADOM</button>
+      <button class="tab-btn" data-target="colomboespañola">COLOMBOESPAÑOLA</button>
+      <button class="tab-btn" data-target="efecty">EFECTY</button>
+      <button class="tab-btn" data-target="torneos">TORNEOS COLOMBIA</button>
+      <button class="tab-btn" data-target="moya">MOYA</button>
+      <button class="tab-btn" data-target="esri">ESRI</button>
+      <button class="tab-btn" data-target="bancamia">BANCAMIA</button>
+      <button class="tab-btn" data-target="special-club">SPECIAL CLUB</button>
+      <button class="tab-btn" data-target="fixit">FIXIT</button>
+      <button class="tab-btn" data-target="san-gabriel">SAN GABRIEL</button>
+      <button class="tab-btn" data-target="expeditor">EXPEDITOR</button>
+      <button class="tab-btn" data-target="longport">LONGPORT</button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- ========= WIN ========= -->
+    <section class="module active" id="win">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/win.png" alt="WIN company logo" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">WIN</span>
+        </div>
+        <div class="module-title">
+          <h2>W I N</h2>
+          <p>Tarifas por zona y número de pasajeros</p>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label" style="color: var(--sc-accent)">Zona 1</div>
+          <table class="rate-table">
+            <thead><tr><th>Pasajeros</th><th>Emprendedor</th><th>Individual</th></tr></thead>
+            <tbody>
+              <tr><td>1 Persona</td><td>$25.110</td><td>—</td></tr>
+              <tr><td>2 Personas</td><td>$30.818</td><td>$15.409</td></tr>
+              <tr><td>3 Personas</td><td>$36.518</td><td>$12.173</td></tr>
+              <tr><td>4 Personas</td><td>$42.236</td><td>$10.559</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zone-card">
+          <div class="zone-label">Zona 2</div>
+          <table class="rate-table">
+            <thead><tr><th>Pasajeros</th><th>Emprendedor</th><th>Individual</th></tr></thead>
+            <tbody>
+              <tr><td>1 Persona</td><td>$40.000</td><td>—</td></tr>
+              <tr><td>2 Personas</td><td>$45.652</td><td>$22.826</td></tr>
+              <tr><td>3 Personas</td><td>$51.361</td><td>$17.120</td></tr>
+              <tr><td>4 Personas</td><td>$57.070</td><td>$14.267</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zone-card">
+          <div class="zone-label">Soacha</div>
+          <table class="rate-table">
+            <thead><tr><th>Pasajeros</th><th>Emprendedor</th><th>Individual</th></tr></thead>
+            <tbody>
+              <tr><td>1 Persona</td><td>$45.147</td><td>—</td></tr>
+              <tr><td>2 Personas</td><td>$51.584</td><td>$25.792</td></tr>
+              <tr><td>3 Personas</td><td>$58.043</td><td>$19.348</td></tr>
+              <tr><td>4 Personas</td><td>$64.480</td><td>$16.120</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zone-card">
+          <div class="zone-label">Especiales</div>
+          <table class="rate-table">
+            <thead><tr><th>Servicio</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Arrayanes / Calle 200</td><td>$49.248</td></tr>
+              <tr><td>Aeropuerto + Zona 1</td><td>$62.203</td></tr>
+              <tr><td>Aeropuerto + Zona 2</td><td>$77.046</td></tr>
+              <tr><td>Dos servicios Zona 1</td><td>$50.219</td></tr>
+              <tr><td>Dos servicios Z1 + Z2</td><td>$65.062</td></tr>
+              <tr><td>Dos servicios Zona 2</td><td>$79.905</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zone-card full-width">
+          <div class="zone-label">Bogotá y Otras Ciudades</div>
+          <table class="rate-table">
+            <thead><tr><th>Destino</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Aeropuerto Ida</td><td>$37.093</td></tr>
+              <tr><td>Neiva</td><td>$707.606</td></tr>
+              <tr><td>Ibague</td><td>$570.650</td></tr>
+              <tr><td>Villavicencio</td><td>$593.476</td></tr>
+              <tr><td>Tunja</td><td>$432.307</td></tr>
+              <tr><td>Día operación Ciudades</td><td>$193.912</td></tr>
+              <tr><td>Hora (Ciudades)</td><td>$22.826</td></tr>
+              <tr><td>Hora Bogotá</td><td>$23.977</td></tr>
+              <tr><td>Cota</td><td>$98.496</td></tr>
+              <tr><td>Chía</td><td>$98.496</td></tr>
+              <tr><td>Tenjo</td><td>$127.388</td></tr>
+              <tr><td>Zipaquirá / Tocancipá</td><td>$147.204</td></tr>
+              <tr><td>Cajicá</td><td>$106.704</td></tr>
+              <tr><td>Briceño</td><td>$207.595</td></tr>
+              <tr><td>Mosquera / Funza</td><td>$106.704</td></tr>
+              <tr><td>Madrid</td><td>$141.542</td></tr>
+              <tr><td>Choconta</td><td>$283.084</td></tr>
+              <tr><td>Ubaté</td><td>$423.106</td></tr>
+              <tr><td>Sibaté</td><td>$127.388</td></tr>
+              <tr><td>Bogotá Trasteos</td><td>$61.335</td></tr>
+              <tr><td>Sopó / Guasquita</td><td>$245.339</td></tr>
+              <tr><td>La Calera</td><td>$98.496</td></tr>
+              <tr><td>Siberia</td><td>$56.126</td></tr>
+              <tr><td>Cogua</td><td>$181.331</td></tr>
+              <tr><td>Parada adicional Bogotá</td><td>$5.700</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zone-card">
+          <div class="zone-label">Medellín</div>
+          <table class="rate-table">
+            <thead><tr><th>Servicio</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>JMC</td><td>$142.000</td></tr>
+              <tr><td>JMC – Retiro</td><td>$183.490</td></tr>
+              <tr><td>Medellín local</td><td>$50.969</td></tr>
+              <tr><td>JMC – Itagüí</td><td>$160.000</td></tr>
+              <tr><td>JMC – Bello</td><td>$160.000</td></tr>
+              <tr><td>JMC – Sabaneta</td><td>$160.000</td></tr>
+              <tr><td>JMC – La Estrella</td><td>$160.000</td></tr>
+              <tr><td>JMC – Envigado</td><td>$160.000</td></tr>
+              <tr><td>Envigado–Itagüí (local)</td><td>$62.985</td></tr>
+              <tr><td>Envigado – Est. Rionegro</td><td>$213.180</td></tr>
+              <tr><td>Rionegro / Llanogrande</td><td>$163.102</td></tr>
+              <tr><td>Medellín–Rionegro / Guarne</td><td>$203.878</td></tr>
+              <tr><td>JMC – Van 15</td><td>$336.398</td></tr>
+              <tr><td>El Retiro – Van 15</td><td>$504.597</td></tr>
+              <tr><td>Hora de espera</td><td>$42.814</td></tr>
+              <tr><td>Parada adicional</td><td>$25.485</td></tr>
+              <tr><td>JMC – Llanogrande</td><td>$76.454</td></tr>
+              <tr><td>Sabaneta – Llanogrande</td><td>$218.994</td></tr>
+              <tr><td>Medellín – Van</td><td>$234.459</td></tr>
+              <tr><td>Itagüí – Envigado</td><td>$63.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zone-card">
+          <div class="zone-label">Otras Ciudades</div>
+          <table class="rate-table">
+            <thead><tr><th>Ciudad / Servicio</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Cúcuta – Aeropuerto</td><td>$52.000</td></tr>
+              <tr><td>Cúcuta – Local</td><td>$52.000</td></tr>
+              <tr><td>Cúcuta – Hora operación</td><td>$52.000</td></tr>
+              <tr><td>Pasto – Aeropuerto</td><td>$170.000</td></tr>
+              <tr><td>Pasto – Hora espera</td><td>$42.682</td></tr>
+              <tr><td>Pasto – Trayecto diurno</td><td>$55.000</td></tr>
+              <tr><td>Neiva – Aeropuerto</td><td>$50.000</td></tr>
+              <tr><td>Neiva – Trayecto diurno</td><td>$50.000</td></tr>
+              <tr><td>Neiva – La Riviera</td><td>$106.704</td></tr>
+              <tr><td>Neiva – Hora</td><td>$50.000</td></tr>
+              <tr><td>Ibague</td><td>$50.000</td></tr>
+              <tr><td>Ibague – Neiva</td><td>$492.480</td></tr>
+              <tr><td>Ibague – Día único oper.</td><td>$245.339</td></tr>
+              <tr><td>Tunja – Tuta (van)</td><td>$127.388</td></tr>
+              <tr><td>Tunja – Tuta</td><td>$94.361</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= BLUECARE ========= -->
+    <section class="module" id="bluecare">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/bluecare.png" alt="BlueCare" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">BLUECARE</span>
+        </div>
+        <div class="module-title">
+          <h2>BLUECARE</h2>
+          <p>Tarifas por hora de servicio</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Tarifas Horarias</div>
+          <table class="rate-table">
+            <thead><tr><th>Tipo</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Hora Normal</td><td>$20.340</td></tr>
+              <tr><td>Hora Dominical</td><td>$21.240</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= ADOM ========= -->
+    <section class="module" id="adom">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/adom.png" alt="ADOM" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">ADOM</span>
+        </div>
+        <div class="module-title">
+          <h2>SERVICIOS ADOM</h2>
+          <p>Tarifas de servicio por hora</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Tarifa</div>
+          <table class="rate-table">
+            <thead><tr><th>Servicio</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Hora Normal</td><td>$18.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= COLOMBOESPAÑOLA ========= -->
+    <section class="module" id="colomboespañola">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/colomboespañola.png" alt="Colombo Española" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">COLOMBOESPAÑOLA</span>
+        </div>
+        <div class="module-title">
+          <h2>COLOMBO ESPAÑOLA</h2>
+          <p>Tarifas aeropuerto y hora de espera</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Tarifas</div>
+          <table class="rate-table">
+            <thead><tr><th>Servicio</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Aeropuerto</td><td>$42.000</td></tr>
+              <tr><td>Hora espera</td><td>$23.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= EFECTY ========= -->
+    <section class="module" id="efecty">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/efecty.png" alt="Efecty" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">EFECTY</span>
+        </div>
+        <div class="module-title">
+          <h2>EFECTY</h2>
+          <p>Tarifas por KM > 5km se adiciona el valor por km recorrido</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Tarifas</div>
+          <table class="rate-table">
+            <thead><tr><th>Servicio</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Mínimo menos de 5 km</td><td>$11.900</td></tr>
+              <tr><td>Base + km adicional (después km 5)</td><td>$2.240</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= TORNEOS COLOMBIA ========= -->
+    <section class="module" id="torneos">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/torneos.png" alt="Torneos Colombia" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">TORNEOS COLOMBIA</span>
+        </div>
+        <div class="module-title">
+          <h2>TORNEOS COLOMBIA</h2>
+          <p>Tarifas de disponibilidad y aeropuerto</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Tarifas</div>
+          <table class="rate-table">
+            <thead><tr><th>Servicio</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Disponibilidad 7 horas</td><td>$190.000</td></tr>
+              <tr><td>Aeropuerto</td><td>$42.250</td></tr>
+              <tr><td>Aeropuerto – Soacha / Usme / Calle 170+</td><td>$58.500</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= MOYA ========= -->
+    <section class="module" id="moya">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/moya.png" alt="MOYA" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">MOYA</span>
+        </div>
+        <div class="module-title">
+          <h2>MOYA</h2>
+          <p>Tarifas aeropuerto y trayecto</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Tarifas</div>
+          <table class="rate-table">
+            <thead><tr><th>Servicio</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Aeropuerto</td><td>$39.200</td></tr>
+              <tr><td>Trayecto</td><td>$33.600</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= ESRI ========= -->
+    <section class="module" id="esri">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/esri.png" alt="ESRI" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">ESRI</span>
+        </div>
+        <div class="module-title">
+          <h2>ESRI</h2>
+          <p>Tarifas por capacidad de pasajeros</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Pasajeros</div>
+          <table class="rate-table">
+            <thead><tr><th>Capacidad</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>1 a 4 pasajeros</td><td>$55.000</td></tr>
+              <tr><td>6 pasajeros</td><td>$77.000</td></tr>
+              <tr><td>7 a 8 pasajeros</td><td>$88.000</td></tr>
+              <tr><td>9 a 11 pasajeros</td><td>$99.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zone-card">
+          <div class="zone-label">Zonas Latam</div>
+          <table class="rate-table">
+            <thead><tr><th>Zona</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Latam Norte</td><td>$44.000</td></tr>
+              <tr><td>Latam Sur</td><td>$55.000</td></tr>
+              <tr><td>Parada adicional</td><td>$5.500</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= BANCAMIA ========= -->
+    <section class="module" id="bancamia">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/bancamia.png" alt="Bancamia" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">BANCAMIA</span>
+        </div>
+        <div class="module-title">
+          <h2>BANCAMIA</h2>
+          <p>Tarifas por destino y tipo de servicio</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Destinos</div>
+          <table class="rate-table">
+            <thead><tr><th>Destino</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Cajicá</td><td>$97.500</td></tr>
+              <tr><td>Chía</td><td>$94.250</td></tr>
+              <tr><td>Cota</td><td>$94.250</td></tr>
+              <tr><td>El Rosal</td><td>$115.700</td></tr>
+              <tr><td>Facatativá</td><td>$115.700</td></tr>
+              <tr><td>Funza</td><td>$104.000</td></tr>
+              <tr><td>Guaimaral</td><td>$44.200</td></tr>
+              <tr><td>Hato Grande</td><td>$94.250</td></tr>
+              <tr><td>La Calera</td><td>$100.750</td></tr>
+              <tr><td>La Caro</td><td>$97.500</td></tr>
+              <tr><td>Madrid</td><td>$104.000</td></tr>
+              <tr><td>Margarita del Ocho</td><td>$42.250</td></tr>
+              <tr><td>Mosquera</td><td>$104.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zone-card">
+          <div class="zone-label">Servicios por Hora / Aeropuerto</div>
+          <table class="rate-table">
+            <thead><tr><th>Servicio</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Hora diurna</td><td>$25.350</td></tr>
+              <tr><td>Hora nocturna / Dom. / Fest.</td><td>$25.350</td></tr>
+              <tr><td>Aeropuerto con recepción</td><td>$54.600</td></tr>
+              <tr><td>Aeropuerto diurno y nocturno</td><td>$42.250</td></tr>
+              <tr><td>Aeropuerto nocturno Dom./Fest.</td><td>$42.250</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= SPECIAL CLUB ========= -->
+    <section class="module" id="special-club">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/specialclub.png" alt="Special Club" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">SPECIAL CLUB</span>
+        </div>
+        <div class="module-title">
+          <h2>SPECIAL CLUB</h2>
+          <p>Tarifas asignadas por cliente</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Clientes</div>
+          <table class="rate-table">
+            <thead><tr><th>Cliente</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Carlos Villegas</td><td>$50.000</td></tr>
+              <tr><td>Camilo Celeno</td><td>$29.000</td></tr>
+              <tr><td>Carolina Salazar</td><td>$27.000</td></tr>
+              <tr><td>Claudia Gutiérrez – Aeropuerto</td><td>$30.000</td></tr>
+              <tr><td>Claudia Gutiérrez – Local</td><td>$27.000</td></tr>
+              <tr><td>Zandra – Aeropuerto</td><td>$48.000</td></tr>
+              <tr><td>Zandra – Hora</td><td>$28.000</td></tr>
+              <tr><td>Leonardo Ordóñez (Primax–Omnicon)</td><td>$40.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= FIXTI ========= -->
+    <section class="module" id="fixit">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/fixit.png" alt="FIXIT" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">FIXIT</span>
+        </div>
+        <div class="module-title">
+          <h2>FIXIT</h2>
+          <p>Tarifas por ciudad y destino</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Bogotá y Alrededores</div>
+          <table class="rate-table">
+            <thead><tr><th>Destino</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Bogotá largo (+15.1 km)</td><td>$38.160</td></tr>
+              <tr><td>Bogotá –15 km</td><td>$34.920</td></tr>
+              <tr><td>Cajicá</td><td>$110.160</td></tr>
+              <tr><td>Soacha / Usme / Ciudad Bolívar</td><td>$57.240</td></tr>
+              <tr><td>Chía / Cota</td><td>$101.520</td></tr>
+              <tr><td>Faca – Marcela Góngora</td><td>$100.800</td></tr>
+              <tr><td>Facatativá</td><td>$104.832</td></tr>
+              <tr><td>Sopó</td><td>$104.832</td></tr>
+              <tr><td>Mosquera</td><td>$104.832</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zone-card">
+          <div class="zone-label">Otras Ciudades</div>
+          <table class="rate-table">
+            <thead><tr><th>Ciudad / Servicio</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Pereira</td><td>$64.800</td></tr>
+              <tr><td>Barranquilla</td><td>$43.200</td></tr>
+              <tr><td>Soledad / Barranquilla</td><td>$43.200</td></tr>
+              <tr><td>Local</td><td>$38.160</td></tr>
+              <tr><td>Sabaneta / Envigado / Bello / Itagüí</td><td>$57.960</td></tr>
+              <tr><td>Rionegro</td><td>$130.000</td></tr>
+              <tr><td>Medellín local</td><td>$48.240</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= SAN GABRIEL ========= -->
+    <section class="module" id="san-gabriel">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/san-gabriel.png" alt="San Gabriel" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">SAN GABRIEL</span>
+        </div>
+        <div class="module-title">
+          <h2>SAN GABRIEL</h2>
+          <p>Tarifas por distancia de recorrido</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Rangos de Distancia</div>
+          <table class="rate-table">
+            <thead><tr><th>Rango</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Corto 1–10 km</td><td>$26.600</td></tr>
+              <tr><td>Mediano 11–20 km</td><td>$38.500</td></tr>
+              <tr><td>Largo 21–30 km</td><td>$52.500</td></tr>
+              <tr><td>Soacha / Usme</td><td>$59.500</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= EXPEDITOR ========= -->
+    <section class="module" id="expeditor">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/expeditor.png" alt="Expeditor" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">EXPEDITOR</span>
+        </div>
+        <div class="module-title">
+          <h2>EXPEDITOR</h2>
+          <p>Tarifas aeropuerto por ciudad</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Aeropuertos</div>
+          <table class="rate-table">
+            <thead><tr><th>Destino</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Bogotá – Aeropuerto</td><td>$31.500</td></tr>
+              <tr><td>Medellín – Aeropuerto Rionegro</td><td>$130.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= LONGPORT ========= -->
+    <section class="module" id="longport">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/longport.png" alt="Longport" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">LONGPORT</span>
+        </div>
+        <div class="module-title">
+          <h2>LONGPORT</h2>
+          <p>Rutas nocturnas y administrativos</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Rutas Nocturnas — por Zona y Pasajeros</div>
+          <table class="rate-table">
+            <thead><tr><th>Zona</th><th>1 Psj</th><th>2 Psj</th><th>3 Psj</th><th>4 Psj</th><th>5 Psj</th><th>6 Psj</th></tr></thead>
+            <tbody>
+              <tr><td>Zona 1</td><td>$15.000</td><td>$23.973</td><td>$29.970</td><td>$38.362</td><td>$41.958</td><td>$45.554</td></tr>
+              <tr><td>Zona 2</td><td>$16.000</td><td>$26.973</td><td>$35.964</td><td>$43.157</td><td>$47.952</td><td>$53.946</td></tr>
+              <tr><td>Zona 3</td><td>$18.200</td><td>$29.970</td><td>$41.958</td><td>$47.952</td><td>$53.946</td><td>$59.940</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zone-card full-width">
+          <div class="zone-label">Administrativos — Destinos Bogotá</div>
+          <table class="rate-table">
+            <thead><tr><th>Destino</th><th>Tarifa</th></tr></thead>
+            <tbody>
+              <tr><td>Usaquén 170</td><td>$39.800</td></tr>
+              <tr><td>Usaquén 115–134</td><td>$31.250</td></tr>
+              <tr><td>Santa Fe</td><td>$25.350</td></tr>
+              <tr><td>Castilla</td><td>$28.000</td></tr>
+              <tr><td>Usaquén 147</td><td>$35.750</td></tr>
+              <tr><td>Fontibón / Engativá</td><td>$16.000</td></tr>
+              <tr><td>Bosa</td><td>$40.000</td></tr>
+              <tr><td>Hora de espera</td><td>$24.400</td></tr>
+              <tr><td>Parada adicional</td><td>$12.200</td></tr>
+              <tr><td>Mosquera</td><td>$105.600</td></tr>
+              <tr><td>Chapinero</td><td>$25.000</td></tr>
+              <tr><td>Zipaquirá</td><td>$119.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Special Car · Tarifas vigentes para conductores · Uso interno</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
