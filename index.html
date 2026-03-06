@@ -39,10 +39,12 @@
       <button class="tab-btn" data-target="esri">ESRI</button>
       <button class="tab-btn" data-target="bancamia">BANCAMIA</button>
       <button class="tab-btn" data-target="special-club">SPECIAL CLUB</button>
-      <button class="tab-btn" data-target="fixit">FIXIT</button>
+      <button class="tab-btn" data-target="fixti">FIXTI</button>
       <button class="tab-btn" data-target="san-gabriel">SAN GABRIEL</button>
       <button class="tab-btn" data-target="expeditor">EXPEDITOR</button>
       <button class="tab-btn" data-target="longport">LONGPORT</button>
+      <button class="tab-btn" data-target="exlservice">EXLSERVICE</button>
+      <button class="tab-btn" data-target="novomet">NOVOMET</button>
     </div>
   </nav>
 
@@ -53,7 +55,7 @@
     <section class="module active" id="win">
       <div class="module-header">
         <div class="module-logo-wrap">
-          <img src="assets/logos/win.png" alt="WIN company logo" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <img src="assets/logos/win.png" alt="WIN" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
           <span class="module-logo-fallback" style="display:none">WIN</span>
         </div>
         <div class="module-title">
@@ -64,7 +66,7 @@
 
       <div class="cards-grid">
         <div class="zone-card">
-          <div class="zone-label" style="color: var(--sc-accent)">Zona 1</div>
+          <div class="zone-label">Zona 1</div>
           <table class="rate-table">
             <thead><tr><th>Pasajeros</th><th>Emprendedor</th><th>Individual</th></tr></thead>
             <tbody>
@@ -286,7 +288,7 @@
         </div>
         <div class="module-title">
           <h2>EFECTY</h2>
-          <p>Tarifas por KM > 5km se adiciona el valor por km recorrido</p>
+          <p>Tarifas calculadas con factor 0.7</p>
         </div>
       </div>
       <div class="cards-grid">
@@ -295,8 +297,8 @@
           <table class="rate-table">
             <thead><tr><th>Servicio</th><th>Tarifa</th></tr></thead>
             <tbody>
-              <tr><td>Mínimo menos de 5 km</td><td>$11.900</td></tr>
-              <tr><td>Base + km adicional (después km 5)</td><td>$2.240</td></tr>
+              <tr><td>Mínimo menos de 5 km</td><td>$11.900 <small>(17.000 × 0.7)</small></td></tr>
+              <tr><td>Base + km adicional (después km 5)</td><td>$2.240 <small>(3.200 × 0.7)</small></td></tr>
             </tbody>
           </table>
         </div>
@@ -388,7 +390,7 @@
             <tbody>
               <tr><td>Latam Norte</td><td>$44.000</td></tr>
               <tr><td>Latam Sur</td><td>$55.000</td></tr>
-              <tr><td>Parada adicional</td><td>$5.500</td></tr>
+              <tr><td>Parada adicional</td><td>$7.000</td></tr>
             </tbody>
           </table>
         </div>
@@ -449,7 +451,7 @@
     <section class="module" id="special-club">
       <div class="module-header">
         <div class="module-logo-wrap">
-          <img src="assets/logos/specialclub.png" alt="Special Club" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <img src="assets/logos/special-club.png" alt="Special Club" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
           <span class="module-logo-fallback" style="display:none">SPECIAL CLUB</span>
         </div>
         <div class="module-title">
@@ -478,14 +480,14 @@
     </section>
 
     <!-- ========= FIXTI ========= -->
-    <section class="module" id="fixit">
+    <section class="module" id="fixti">
       <div class="module-header">
         <div class="module-logo-wrap">
-          <img src="assets/logos/fixit.png" alt="FIXIT" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
-          <span class="module-logo-fallback" style="display:none">FIXIT</span>
+          <img src="assets/logos/fixti.png" alt="FIXTI" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">FIXTI</span>
         </div>
         <div class="module-title">
-          <h2>FIXIT</h2>
+          <h2>FIXTI</h2>
           <p>Tarifas por ciudad y destino</p>
         </div>
       </div>
@@ -543,7 +545,7 @@
           <table class="rate-table">
             <thead><tr><th>Rango</th><th>Tarifa</th></tr></thead>
             <tbody>
-              <tr><td>Corto 1–10 km</td><td>$26.600</td></tr>
+              <tr><td>Corto 1–10 km</td><td>$24.000</td></tr>
               <tr><td>Mediano 11–20 km</td><td>$38.500</td></tr>
               <tr><td>Largo 21–30 km</td><td>$52.500</td></tr>
               <tr><td>Soacha / Usme</td><td>$59.500</td></tr>
@@ -620,6 +622,100 @@
               <tr><td>Mosquera</td><td>$105.600</td></tr>
               <tr><td>Chapinero</td><td>$25.000</td></tr>
               <tr><td>Zipaquirá</td><td>$119.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========= EXLSERVICE ========= -->
+    <section class="module" id="exlservice">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/exl.jpg" alt="EXLService" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">EXLSERVICE</span>
+        </div>
+        <div class="module-title">
+          <h2>EXLSERVICE</h2>
+          <p>Tarifas 2025 se realizara la actualizacion a partir del 01 de abril de 2026</p>
+          <p>Tarifas para servicios por localidad en Bogotá</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Bogotá — Por Localidad</div>
+          <table class="rate-table">
+            <thead><tr><th>#</th><th>Localidad</th><th>Flete</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Usaquén</td><td>$38.500</td></tr>
+              <tr><td>2</td><td>Chapinero</td><td>$31.500</td></tr>
+              <tr><td>3</td><td>Santa Fe</td><td>$31.500</td></tr>
+              <tr><td>4</td><td>San Cristóbal</td><td>$38.500</td></tr>
+              <tr><td>5</td><td>Usme</td><td>$38.500</td></tr>
+              <tr><td>6</td><td>Tunjuelito</td><td>$38.500</td></tr>
+              <tr><td>7</td><td>Bosa</td><td>$38.500</td></tr>
+              <tr><td>8</td><td>Kennedy</td><td>$31.500</td></tr>
+              <tr><td>9</td><td>Fontibón</td><td>$26.600</td></tr>
+              <tr><td>10</td><td>Engativá</td><td>$31.500</td></tr>
+              <tr><td>11</td><td>Suba – Parte de abajo</td><td>$38.500</td></tr>
+              <tr><td>12</td><td>Suba</td><td>$35.000</td></tr>
+              <tr><td>13</td><td>Barrios Unidos</td><td>$31.500</td></tr>
+              <tr><td>14</td><td>Teusaquillo</td><td>$31.500</td></tr>
+              <tr><td>15</td><td>Los Mártires</td><td>$31.500</td></tr>
+              <tr><td>16</td><td>Antonio Nariño</td><td>$31.500</td></tr>
+              <tr><td>17</td><td>Puente Aranda</td><td>$31.500</td></tr>
+              <tr><td>18</td><td>La Candelaria</td><td>$31.500</td></tr>
+              <tr><td>19</td><td>Rafael Uribe Uribe</td><td>$38.500</td></tr>
+              <tr><td>20</td><td>Ciudad Bolívar</td><td>$38.500</td></tr>
+              <tr><td>21</td><td>Soacha</td><td>$45.500</td></tr>
+              <tr><td>22</td><td>Arrayanes</td><td>$45.500</td></tr>
+              <tr><td>23</td><td>Parada adicional </td><td>$7.000</td></tr>
+              <tr><td>—</td><td>Parada adicional solo aplica a servicios de ruta</td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= NOVOMET ========= -->
+    <section class="module" id="novomet">
+      <div class="module-header">
+        <div class="module-logo-wrap">
+          <img src="assets/logos/novomet.jpg" alt="Novomet" class="module-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span class="module-logo-fallback" style="display:none">NOVOMET</span>
+        </div>
+        <div class="module-title">
+          <h2>NOVOMET</h2>
+          <p>Tarifas 2025 se realizara la actualizacion a partir del 01 de abril de 2026</p>
+          <p>Tarifas por Origen y Destino</p>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="zone-card">
+          <div class="zone-label">Tarifas Generales</div>
+          <table class="rate-table">
+            <thead><tr><th>Origen</th><th>Destino</th><th>Emprendedor</th></tr></thead>
+            <tbody>
+              <tr><td>—</td><td>Hora de espera</td><td>$22.092</td></tr>
+              <tr><td>—</td><td>Parada Adicional</td><td>$22.092</td></tr>
+              <tr><td>Bogotá</td><td>Aeropuerto</td><td>$40.502</td></tr>
+              <tr><td>Bogotá</td><td>Bogotá</td><td>$40.502</td></tr>
+              <tr><td>Zona Franca Intexzona – Cota</td><td>Bogotá</td><td>$49.000</td></tr>
+              <tr><td>Zona Franca Intexzona – Cota</td><td>San Cristóbal / Ciudad Bolívar / Bosa</td><td>$59.500</td></tr>
+              <tr><td>Zona Franca Intexzona – Cota</td><td>Cota</td><td>$84.686</td></tr>
+              <tr><td>Aeropuerto</td><td>Cota (Hotel Factory – Zuca e Intexzona)</td><td>$84.686</td></tr>
+              <tr><td>Zona Franca Intexzona – Cota</td><td>Cajicá</td><td>$91.314</td></tr>
+              <tr><td>Zona Franca Intexzona – Cota</td><td>Mosquera</td><td>$110.460</td></tr>
+              <tr><td>Zona Franca Intexzona – Cota</td><td>Madrid</td><td>$110.460</td></tr>
+              <tr><td>Zona Franca Intexzona – Cota</td><td>Funza</td><td>$110.460</td></tr>
+              <tr><td>Zona Franca Intexzona – Cota</td><td>Facatativá</td><td>$125.188</td></tr>
+              <tr><td>Ruta AM/PM Miércoles</td><td>Intexzona – Villas de Granada (hasta 3 paradas)</td><td>$63.750</td></tr>
+              <tr><td>Cajicá</td><td>Bogotá</td><td>$110.460</td></tr>
+              <tr><td>Mosquera</td><td>Bogotá</td><td>$110.460</td></tr>
+              <tr><td>Madrid</td><td>Bogotá</td><td>$110.460</td></tr>
+              <tr><td>Funza</td><td>Bogotá</td><td>$110.460</td></tr>
+              <tr><td>Facatativá</td><td>Bogotá</td><td>$125.188</td></tr>
             </tbody>
           </table>
         </div>
