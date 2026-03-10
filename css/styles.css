@@ -8,10 +8,10 @@
   --sc-dark:     #011031;
   --sc-card:     #090e55;
   --sc-border:   #0c0c64;
-  --sc-accent:   #ecb00a;     /* gold */
+  --sc-accent:   #ffbd07;     /* gold */
   --sc-accent2:  #b90f0f;
   --sc-text:     #ffffff;
-  --sc-muted:    #ffa600;
+  --sc-muted:    #ffaa0d;
   --sc-white:    #ffffff;
   --radius:      12px;
   --radius-lg:   20px;
@@ -35,13 +35,13 @@ body {
 
 /* ===== HEADER ===== */
 .site-header {
-  background: linear-gradient(145deg, #030455 50%, #01125fe1 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   border-bottom: 2px solid var(--sc-accent);
   padding: 24px 32px;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 32px rgba(230, 162, 4, 0.15);
+  box-shadow: 0 2px 32px rgba(59, 56, 224, 0.15);
 }
 
 .header-inner {
@@ -139,13 +139,13 @@ body {
 }
 
 .tab-btn:hover {
-  background: rgba(81, 67, 212, 0.08);
-  border-color: rgba(10, 24, 104, 0.3);
+  background: rgba(17, 32, 238, 0.08);
+  border-color: rgba(20, 41, 231, 0.3);
   color: var(--sc-accent);
 }
 
 .tab-btn.active {
-  background: rgba(70, 70, 228, 0.329);
+  background: rgba(67, 106, 212, 0.15);
   border-color: var(--sc-accent);
   color: var(--sc-accent);
 }
@@ -254,7 +254,7 @@ body {
 }
 
 .zone-label {
-  background: linear-gradient(90deg, rgba(67, 69, 212, 0.18) 0%, transparent 100%);
+  background: linear-gradient(90deg, rgba(67, 113, 212, 0.18) 0%, transparent 100%);
   border-bottom: 1px solid var(--sc-border);
   color: var(--sc-accent);
   font-family: var(--font-head);
@@ -292,7 +292,7 @@ body {
 .rate-table tbody tr:last-child { border-bottom: none; }
 
 .rate-table tbody tr:hover {
-  background: rgba(212,168,67,.05);
+  background: rgba(67, 101, 212, 0.05);
 }
 
 .rate-table tbody td {
@@ -333,13 +333,131 @@ body {
 }
 
 /* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .main-content { padding: 32px 24px; }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-  .site-header { padding: 16px 20px; }
-  .header-title h1 { font-size: 20px; }
-  .tab-nav { top: 90px; }
-  .main-content { padding: 24px 16px; }
-  .cards-grid { grid-template-columns: 1fr; }
-  .zone-card.full-width { grid-column: 1; }
-  .module-header { gap: 14px; padding: 18px 20px; }
-  .module-title h2 { font-size: 20px; }
+  /* Header */
+  .site-header {
+    padding: 12px 16px;
+    position: sticky;
+    top: 0;
+  }
+  .header-inner {
+    gap: 12px;
+  }
+  .logo-main {
+    height: 38px;
+  }
+  .logo-placeholder {
+    padding: 7px 12px;
+  }
+  .logo-text {
+    font-size: 16px;
+  }
+  .header-title h1 {
+    font-size: 16px;
+    letter-spacing: -0.3px;
+  }
+  .header-title p {
+    font-size: 11px;
+  }
+
+  /* Nav tabs */
+  .tab-nav {
+    top: 66px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab-nav-inner {
+    padding: 6px 12px;
+    gap: 4px;
+  }
+  .tab-btn {
+    font-size: 10px;
+    padding: 7px 12px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Main */
+  .main-content {
+    padding: 16px 12px;
+  }
+
+  /* Module header */
+  .module-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border-radius: var(--radius);
+  }
+  .module-logo-wrap {
+    width: 56px;
+    height: 44px;
+  }
+  .module-logo {
+    max-width: 50px;
+    max-height: 38px;
+  }
+  .module-title h2 {
+    font-size: 18px;
+  }
+  .module-title p {
+    font-size: 12px;
+  }
+
+  /* Cards grid — single column on mobile */
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .zone-card.full-width {
+    grid-column: 1;
+  }
+
+  /* Tables — scrollable horizontally */
+  .zone-card {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius);
+  }
+  .rate-table {
+    min-width: 280px;
+  }
+  .rate-table thead th,
+  .rate-table tbody td {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+  .rate-table thead th {
+    font-size: 9px;
+  }
+
+  /* Iframe map */
+  iframe {
+    height: 300px !important;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 16px 12px;
+    margin-top: 32px;
+    font-size: 11px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  .header-title h1 { font-size: 14px; }
+  .header-title p  { display: none; }
+  .tab-btn          { font-size: 9px; padding: 6px 10px; }
+  .module-title h2  { font-size: 16px; }
 }
